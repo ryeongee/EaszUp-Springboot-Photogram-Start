@@ -1,6 +1,6 @@
 server:
-  port: 8080
-  servlet:
+  port: 3080
+  servlet :
     context-path: /
     encoding:
       charset: utf-8
@@ -21,7 +21,7 @@ spring:
   jpa:
     open-in-view: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update #create
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true
