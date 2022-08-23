@@ -48,7 +48,6 @@ public class AuthController {
                 System.out.println("=========================================");
             }
 //            System.out.println(errorMap);
-//            return "오류남";
             throw new CustomValidationException("유효성검사 실패함", errorMap); // exception이 낚아챔 but error msg 리턴하고싶음
 
         } else {
